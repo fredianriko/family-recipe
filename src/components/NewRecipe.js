@@ -1,15 +1,6 @@
 import React, { useState } from "react";
 
 function NewRecipe() {
-  //   const [form, setForm] = useState(() => {
-  //     <AddRecipeForm />;
-  //   });
-  //   const checkButton = () => {
-  //     if ((<ButtonClick />)) {
-  //       <div>Hello World</div>;
-  //     }
-  //   };
-
   return <ButtonClick />;
 }
 

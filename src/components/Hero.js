@@ -1,7 +1,10 @@
 import React from "react";
 import spaghetti from "../assets/image/spaghetti.jpg";
-import burger from "../assets/image/";
+import burger from "../assets/image/burger.jpg";
+import sushi from "../assets/image/sushi.jpg";
+import steak from "../assets/image/steak.jpg";
 
+// mau bikin auto slide carousel/hero tapi masih gatau gimana caranya, tolong bang
 function Hero() {
   const data = [
     {
@@ -22,14 +25,20 @@ function Hero() {
     },
   ];
 
+  const iterateImage = data.map((items) => {
+    console.log(items);
+    <img src={items} />;
+  });
+
   return (
-    <>
-      <div className="hero-container ">
-        <img src={data} alt="" />
-      </div>
-      ;
-    </>
+    <div className="hero-container ">
+      <img src={data[1].image} alt="" className="hero-image" />
+    </div>
   );
+}
+
+function ImageItem(props) {
+  return <img src={props.image} alt="" />;
 }
 
 export default Hero;
