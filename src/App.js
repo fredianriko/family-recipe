@@ -1,7 +1,5 @@
 import Card from "./components/Card";
 import Hero from "./components/Hero";
-import LoginPage from "./components/LoginPage";
-
 import Navbar from "./components/Navbar";
 import NavItem from "./components/NavItem";
 import NewRecipe from "./components/NewRecipe";

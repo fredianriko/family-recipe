@@ -77,8 +77,8 @@ a {
 }
 .hero-image {
   width: 50%;
-  height: 57git0px;
-  margin: 10px;
+  height: 500px;
+  margin-left: 40px;
 }
 
 .card-group {
@@ -235,4 +235,22 @@ a {
   display: flex;
   position: relative;
   text-align: start;
+}
+
+.input-new-recipe {
+  margin-left: 50px;
+  height: 500px;
+  width: 500px;
+}
+
+.new-recipe-name {
+  width: 300px;
+}
+
+.new-recipe-textarea {
+  width: 500px;
+}
+
+.browse-image {
+  cursor: pointer;
 }
