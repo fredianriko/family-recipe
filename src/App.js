@@ -14,7 +14,7 @@ function App() {
         <NavItem label="Contact us" />
       </Navbar>
       <Hero />
-      <LoginPage />
+
       <Card />
       <NewRecipe />
     </div>

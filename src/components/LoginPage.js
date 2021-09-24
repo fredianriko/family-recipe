@@ -1,7 +1,7 @@
 import React from "react";
 
 function LoginPage() {
-  return <div classNames="login-page"></div>;
+  return <div className="login-page"></div>;
 }
 
 export default LoginPage;
