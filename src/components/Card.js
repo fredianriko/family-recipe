@@ -5,6 +5,10 @@ function Card(props) {
   return (
     <div className="card-group">
       <CardItems />
+      <CardItems />
+      <CardItems />
+      <CardItems />
+      <CardItems />
     </div>
   );
 }

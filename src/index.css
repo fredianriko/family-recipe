@@ -3,6 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 code {
@@ -18,6 +19,11 @@ code {
   --border-radius: 8px;
   --speed: 500ms;
 }
+
+.App {
+  height: 100%;
+}
+
 .navbar {
   height: var(--nav-size);
   background-color: var(--bg);
@@ -56,21 +62,112 @@ a {
 .nav-item:hover {
   text-decoration: underline;
 }
+
+.hero-container {
+  width: 100%;
+  height: 200px;
+}
+
 .card-group {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   justify-items: center;
-  margin-top: 3rem;
+}
+
+.card-container {
+  width: 15rem;
+  height: 20rem;
+  border: solid;
+  overflow: hidden;
+  border-radius: 8%;
+  margin: 20px;
+}
+
+.card-label {
+  width: 100%;
+  text-align: center;
+  align-items: center;
 }
 
 .card-header {
   width: 100%;
   height: 33%;
   align-items: center;
+  text-align: center;
 }
-.card-container {
-  width: 15rem;
-  height: 20rem;
-  border: solid;
+.card-description {
+  position: relative;
+  max-width: 100%;
+  height: 100px;
+  border-style: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.5rem;
+  overflow: hidden;
+  padding: 2px;
+  text-align: center;
+}
+
+.card-description p {
+  width: 100%;
+  height: 100%;
+  font-size: 11px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 15px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+.recipe-image {
+  width: 100%;
+  position: relative;
+}
+
+.card-button {
+  display: flex;
+  position: static;
+  margin-bottom: 0;
+  margin-top: 12px;
+  justify-content: center;
+}
+
+.view-button,
+.edit-button,
+.delete-button {
+  width: 70px;
+  margin-right: 2px;
+  margin-left: 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.view-button:hover {
+  background-color: green;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: yellow;
+  color: black;
+}
+.delete-button:hover {
+  background-color: red;
+  color: white;
+}
+
+.card-container:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px;
+}
+
+.add-recipe {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.add-recipe-button {
+  cursor: pointer;
 }
